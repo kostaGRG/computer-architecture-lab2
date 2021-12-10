@@ -12,7 +12,7 @@
 8. system.cpu.icache.overall_miss_rate::total για το miss rate της L1 Instruction Cache.
 9. system.l2.overall_miss_rate::total για το miss rate της L2 Cache.
 
-Σχηματίζουμε λοιπόν τον παρακάτω πίνακα με βάση τα αποτελέσματα των προσομοιώσεων:
+Σχηματίζουμε λοιπόν τον παρακάτω πίνακα με βάση τα αποτελέσματα των προσομοιώσεων: (πίνακας 1)
 
 | |SPECBZIP|SPECMCF|SPECHMMER|SPECSJENG|SPECLIBM|
 |:-----------:|:---------:|:----------:|:----------:|:-----:|:-----:|
@@ -20,8 +20,19 @@
 |committed instructions|100000000|100000000|	|100000000|100000000|
 |L1 data cache replacements|681759|55092|	|5262346|1486606|
 |L2 accesses|683562|190604|	|5264008|1488197|
-|simulation seconds|0.058458|0.000058|	|0.513833|0.174763|
+|simulation seconds|0.083664|0.058458|	|0.513833|0.174763|
 |CPI|1.673271|1.169160|	|10.276660|3.495270|
 |L1 data cache miss rate|0.014311|0.002124|	|0.121831|0.060971|
 |L1 instruction cache miss rate|0.000076|0.004844|	|0.000015|0.000094|
 |L2 miss rate|0.295248|0.209015|	|0.999978|0.999943|
+
+Α) (ΓΙΑΤΙ committed insts != executed insts)
+
+Γ) Ο αριθμός των προσβάσεων στην L2 cache θα μπορούσε να υπολογιστεί και από την πρόσθεση των icache misses και dcache misses, δηλαδή τον αριθμό των συνολικών misses στην L1 cache.
+
+2) Για τα παραπάνω benchmarks δημιουργήθηκαν γραφήματα για:  
+i) τον χρόνο εκτέλεσης
+ii) CPI
+iii) miss rates
+
+
