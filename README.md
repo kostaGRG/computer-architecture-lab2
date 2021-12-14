@@ -35,9 +35,9 @@ i) τον χρόνο εκτέλεσης
 ii) CPI
 iii) miss rates
 
-![Simulation seconds](./images/sim_seconds.png)
-![CPI](./images/CPI.png)
-![Miss rates](./images/miss_rates.png)
+![Simulation seconds](./images/partA/sim_seconds.png)
+![CPI](./images/partA/CPI.png)
+![Miss rates](./images/partA/miss_rates.png)
 
 3) Επιλέξαμε να τρέξουμε το benchmark specmcf με την επιπλέον παράμετρο --cpu-clock=1.5GHz. Έπειτα πήγαμε στα αρχεία stats.txt για την αρχική αλλά και για την αλλαγμένη προσομοίωση και πήραμε τα αποτελέσματα που φαίνονται στον επόμενο πίνακα για τις τιμές των system.clk_domain.clock και cpu_cluster.clk_domain.clock:
 
@@ -49,5 +49,17 @@ iii) miss rates
 >Οι τιμές στον παραπάνω πίνακα είναι μετρημένες σε ticks per clock period. (1 tick = 1ms)
 
 Εύκολα γίνεται αντιληπτό πως η παραπάνω παράμετρος επηρεάζει μόνο το cpu clock. Η ταχύτητα του ρολογιού του επεξεργαστή αυξήθηκε κατα 33.3%.
-Επίσης, ο χρόνος της πρώτης προσομοίωσης ήτανε 0.058458 seconds ενώ της δεύτερης, μετά την αλλαγή στο ρολόι του επεξεργαστή, έγινε 
+Επίσης, ο χρόνος της πρώτης προσομοίωσης ήτανε 0.058458 seconds ενώ της δεύτερης, μετά την αλλαγή στο ρολόι του επεξεργαστή, έγινε 0.077242 seconds, το οποίο είναι αύξηση κατά 32.1%.
+
+
+#### Μέρος 2
+Για να γίνουν τα παρακάτω διαγράμματα έγιναν πολλές προσομοιώσεις αλλάζοντας κάθε φορά μια παράμετρο και κρατώντας τις υπόλοιπες σταθερές, για κάθε ένα από τα 5 διαφορετικά benchmarks. 
+
+1. Για το benchmark speclibm προέκυψαν τα εξής διαγράμματα:
+
+![SPECLIBM cache sizes](./images/partB/speclibm/cache_sizes.png)
+![SPECLIBM associativities](./images/partB/speclibm/associativities.png)
+
+2. Για το benchmark specsjeng:
+
 
