@@ -62,4 +62,7 @@ iii) miss rates
 
 2. Για το benchmark specsjeng:
 
+![SPECSJENG cache sizes](./images/partB/specsjeng/cache_sizes.png)
+![SPECSJENG associativities](./images/partB/specsjeng/associativities.png)
+
 
