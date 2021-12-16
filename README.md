@@ -98,9 +98,9 @@ L2 cache associativity = 1, 2, 4
 * Η L1 cache έχει διαφορετικές απαιτήσεις συγκριτικά με την L2 cache. Πιο συγκεκριμένα, η L1 cache θέλουμε να είναι πολύ γρήγορη και περιορισμένη σε φυσικό χώρο καθώς βρίσκεται στον επεξεργαστή. Η L2 cache από την άλλη μπορεί να καταλαμβάνει μεγαλύτερο χώρο, οπότε έχει και μεγαλύτερη χωρητικότητα, ωστόσο οι απαιτήσεις σε ταχύτητα προσπέλασης είναι μικρότερες.
 * Ένας συμβιβασμός που μπορούμε να κάνουμε είναι να θεωρήσουμε ως μονάδα κόστους την 32kB L2 direct mapped cache memory (one-way associative) και επίσης πως για την ίδια χωρητικότητα, η L1 cache έχει 4 φορές μεγαλύτερο κόστος. Έτσι για παράδειγμα αν χρησιμοποιήσουμε στο σύστημα μας 64kB L1 cache 1-way associative και 256kB L2 cache 1-way associative το συνολικό κόστος θα είναι: Κ = 8+8=16.
 * Όσο αυξάνουμε το associativity αυξάνουμε και το κόστος της μνήμης, καθώς η πολυπλοκότητα του σχεδιασμού της μεγαλώνει. Θα κάνουμε λοιπόν την υπόθεση πως το κόστος αυξάνει ανάλογα, δηλαδή μία  4-way associative memory έχει τετραπλάσιο κόστος απότι μια 1-way.
-* Λαμβάνοντας υπόψη όλα τα παραπάνω μπορούμε να καταλήξουμε στον εξής τύπο:
-Κ = 4*N\_L1I*ASSOC\_L1I + 4*N\_L1D*ASSOC\_L1D + N\_L2*ASSOC\_L2
-όπου:
+* Λαμβάνοντας υπόψη όλα τα παραπάνω μπορούμε να καταλήξουμε στον εξής τύπο:  
+Κ = 4\*N\_L1I\*ASSOC\_L1I + 4\*N\_L1D\*ASSOC\_L1D + N\_L2\*ASSOC\_L2
+όπου:  
 -->Ν\_L1I = SIZE\_L1I/32 και ούτω καθεξής.
 
 Εφόσον έχουμε τη συνάρτηση κόστους θα προσπαθήσουμε να επιλέξουμε το κατάλληλο configuration με βάση και τα προηγούμενα γραφήματα. Σχηματίζουμε τον παρακάτω πίνακα, όπου στην προτελευταία γραμμή υπολογίζουμε το κόστος των επιλογών και στην τελευταία γραμμή είναι το CPI που προκύπτει:
@@ -118,7 +118,7 @@ L2 cache associativity = 1, 2, 4
 |CPI|	|	|5.181|1.655|
 
 #### Πηγές
-[Cache memory cost](https://superuser.com/questions/808830/why-is-cache-memory-so-expensive.com)
-[Cache memory sizes](https://stackoverflow.com/questions/4666728/why-is-the-size-of-l1-cache-smaller-than-that-of-the-l2-cache-in-most-of-the-pro.com)
-[Set associative cache](https://www.sciencedirect.com/topics/computer-science/set-associative-cache.com)
+[Cache memory cost](https://superuser.com/questions/808830/why-is-cache-memory-so-expensive.com)  
+[Cache memory sizes](https://stackoverflow.com/questions/4666728/why-is-the-size-of-l1-cache-smaller-than-that-of-the-l2-cache-in-most-of-the-pro.com)  
+[Set associative cache](https://www.sciencedirect.com/topics/computer-science/set-associative-cache.com)  
 
