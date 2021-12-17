@@ -75,12 +75,14 @@ L2 cache associativity = 1, 2, 4
 1. Για το benchmark **specbzip** προέκυψαν τα εξής διαγράμματα:
 
 ![SPECBZIP cache sizes](./images/partB/specbzip/cache_sizes.png)
-![SPECBZIP associativities](./images/partB/specbzip/associativities.png)
+![SPECBZIP L1 associativities](./images/partB/specbzip/L1_associativities.png)
+![SPECBZIP L2 associativities](./images/partB/specbzip/L2_associativities.png)
 
 2. Για το benchmark **specmcf**:
 
 ![SPECMCF cache sizes](./images/partB/specmcf/cache_sizes.png)
-![SPECMCF associativities](./images/partB/specmcf/associativities.png)
+![SPECMCF L1 associativities](./images/partB/specmcf/L1_associativities.png)
+![SPECMCF L2 associativities](./images/partB/specmcf/L2_associativities.png)
 
 3. Για το benchmark **speclibm** προέκυψαν τα εξής διαγράμματα:
 
