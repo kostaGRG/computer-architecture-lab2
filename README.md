@@ -109,15 +109,15 @@ L2 cache associativity = 1, 2, 4
 
 | |SPECBZIP|SPECMCF|SPECSJENG|SPECLIBM|
 |:-----------:|:---------:|:----------:|:-----:|:-----:|
-|L1 data cache size|	|	|128kB|32 kB|
-|L1 instruction cache size|	|	|64kB|64 kB|
-|L2 cache size|	|	|512kB|256 kB|
-|L1 data cache associativity|	|	|1|2|
-|L1 instruction cache associativity|	|	|1|1|
-|L2 cache associativity|	|	|1|1|
-|cache line size|	|	|256|256|
-|cost|	|	|40|24|
-|CPI|	|	|5.181|1.655|
+|L1 data cache size|64kB|128kB|128kB|32 kB|
+|L1 instruction cache size|64kB|64kB|64kB|64 kB|
+|L2 cache size|256kB|256kB|512kB|256 kB|
+|L1 data cache associativity|2|1|1|2|
+|L1 instruction cache associativity|2|2|1|1|
+|L2 cache associativity|2|2|1|1|
+|cache line size|128|128|256|256|
+|cost|48|48|40|24|
+|CPI|1.869|1.103|5.181|1.655|
 
 #### Πηγές
 [Cache memory cost](https://superuser.com/questions/808830/why-is-cache-memory-so-expensive.com)  
