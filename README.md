@@ -130,11 +130,11 @@ L2 cache associativity = 1, 2, 4
 |L1 instruction cache associativity|2|2|1|1|
 |L2 cache associativity|4|2|1|1|
 |cache line size|128|128|256|256|
-|cost|22.2|26.8|18.9|34|
+|cost|22.2|26.8|34|18.9|
 |CPI|1.746|1.103|5.181|1.655|
 
 #### Πηγές
 [Cache memory cost](https://superuser.com/questions/808830/why-is-cache-memory-so-expensive.com)  
 [Cache memory sizes](https://stackoverflow.com/questions/4666728/why-is-the-size-of-l1-cache-smaller-than-that-of-the-l2-cache-in-most-of-the-pro.com)  
-[Set associative cache](https://www.sciencedirect.com/topics/computer-science/set-associative-cache.com)  
+[Set associative cache](https://www.sciencedirect.com/topics/computer-science/set-associative-cache)  
 
