@@ -1,0 +1,9 @@
+Benchmarks	simSeconds	system.cpu.dcache.overallMissRate::total	system.cpu.icache.overallMissRate::total	system.l2.overallMissRate::total
+specbzip	0.083813	0.014292	0.000075	0.294749
+specbzipDiffClock	0.109546	0.014251	0.000075	0.294744
+specmcf	0.055471	0.002038	0.000037	0.727788
+specmcfDiffClock	0.073255	0.002038	0.000037	0.727788
+specsjeng	0.513835	0.121829	0.000020	0.999979
+specsjengDiffClock	0.582136	0.121829	0.000020	0.999979
+speclibm	0.174776	0.060971	0.000098	0.999927
+speclibmDiffClock	0.205116	0.060971	0.000098	0.999927

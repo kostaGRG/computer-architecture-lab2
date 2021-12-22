@@ -1,0 +1,9 @@
+Benchmarks	simSeconds
+specbzip	0.083813
+specbzipDiffClock	0.109546
+specmcf	0.055471
+specmcfDiffClock	0.073255
+specsjeng	0.513835
+specsjengDiffClock	0.582136
+speclibm	0.174776
+speclibmDiffClock	0.205116
