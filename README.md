@@ -55,17 +55,17 @@ iii) miss rates
 
 Η συχνότητα ρολογιού της CPU χρονίζει όλα τα συστήματα στο εσωτερικό του επεξεργαστή, ενώ η συχνότητα του συστήματος χρονίζει τα περιφερειακά συστήματα όπως η μνήμη DRAM.
 
-Πιο συγκεκριμένα, αν αναζητήσουμε στο αρχείο config.ini τα tags, παρατηρούμε ότι το καθένα επηρεάζει τα παρακάτω στοιχεία: 
+Πιο συγκεκριμένα, αν αναζητήσουμε στο αρχείο config.ini τα tags, παρατηρούμε ότι το καθένα επηρεάζει τα παρακάτω στοιχεία:  
 [system.clk_domain]  
-1)[system.dvfs_handler]  
-2)[system.mem_ctrls]  
-3)[system.mem_ctrls.dram]  
-4)[system.membus]  
+1) [system.dvfs_handler]  
+2) [system.mem_ctrls]  
+3) [system.mem_ctrls.dram]  
+4) [system.membus]  
 [system.cpu_clk_domain]  
-1)[system.cpu]  
-2)[system.cpu.dcache]  
-3)[system.cpu.icache]  
-4)[system.cpu.l2] 
+1) [system.cpu]  
+2) [system.cpu.dcache]  
+3) [system.cpu.icache]  
+4) [system.cpu.l2] 
 
 Αν ανατρέξουμε στο αντίστοιχο config.json αρχείο για κάθε περίπτωση, θα διαπιστώσουμε ότι το system.clk_domain.clock ισούται με 1000 ticks (1 tick = 1 picosecond) και στις δύο περιπτώσεις αφού αυτή είναι η default τιμή του. Αντίθετα, το system.cpu.clk_domain.clock μεταβάλλεται από 500 σε 667. Αυτό είναι λογικό αφού η συχνότητα μειώθηκε κατά 500Hz. 
 
