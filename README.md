@@ -130,7 +130,7 @@ L2 cache associativity = 1, 2, 4
 |L1 instruction cache associativity|2|2|1|1|
 |L2 cache associativity|4|2|1|1|
 |cache line size|128|128|256|256|
-|cost|48|48|40|24|
+|cost|22.2|26.8|18.9|34|
 |CPI|1.746|1.103|5.181|1.655|
 
 #### Πηγές
