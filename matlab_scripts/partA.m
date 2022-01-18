@@ -15,17 +15,37 @@ X=reordercats(X,["SPECBZIP" "SPECMCF" "SPECSJENG" "SPECLIBM"]);
 
 
 figure(1);
-barh(X,sim_seconds,0.9);
+b=barh(X,sim_seconds,0.9);
+xtips1 = b(1).YEndPoints + 0.5;
+ytips1 = b(1).XEndPoints;
+labels1 = string(b(1).YData);
+text(xtips1,ytips1,labels1,'VerticalAlignment','middle')
 title('simulation seconds (ms)');
 
 figure(2);
-barh(X,CPI,0.9);
+b = barh(X,CPI,0.9);
+xtips1 = b(1).YEndPoints + 0.3;
+ytips1 = b(1).XEndPoints;
+labels1 = string(b(1).YData);
+text(xtips1,ytips1,labels1,'VerticalAlignment','middle')
 title('CPI');
 
 miss_rates(1,:)=dcache_miss_rate;
 miss_rates(2,:)=icache_miss_rate;
 miss_rates(3,:)=l2_miss_rate;
 figure(3);
-barh(X,miss_rates,0.9);
+b = barh(X,miss_rates,0.9);
+xtips1 = b(1).YEndPoints + 0.01;
+ytips1 = b(1).XEndPoints;
+labels1 = string(b(1).YData);
+text(xtips1,ytips1,labels1,'VerticalAlignment','middle')
+xtips2 = b(2).YEndPoints + 0.01;
+ytips2 = b(2).XEndPoints;
+labels2 = string(b(2).YData);
+text(xtips2,ytips2,labels2,'VerticalAlignment','middle')
+xtips3 = b(3).YEndPoints + 0.01;
+ytips3 = b(3).XEndPoints;
+labels3 = string(b(3).YData);
+text(xtips3,ytips3,labels3,'VerticalAlignment','middle')
 title("Miss rates");
 legend("L1 data cache","L1 instruction cache","L2 cache");
