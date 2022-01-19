@@ -172,6 +172,6 @@ L2 cache associativity = 1, 2, 4
    Email: konsgero@ece.auth.gr  
    Github: [kostaGRG](https://github.com/kostaGRG/)  
 2. Ονοματεπώνυμο: Κατερίνα Βοσνιάδου  
-   Email:  
+   Email: katerinavos@gmail.com  
    Github: [katerinavos](https://github.com/katerinavos_)
 
