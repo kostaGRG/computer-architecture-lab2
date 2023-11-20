@@ -3,7 +3,7 @@
 1. Full Name: Konstantinos Gerogiannis  
    Email: kostas.gerogiannis04@gmail.com  
    Github: [kostaGRG](https://github.com/kostaGRG/)  
-2. Full Name: Katerina Vosniadou
+2. Full Name: Katerina Vosniadou  
    Email: katerinavosn@gmail.com  
    Github: [katerinavos](https://github.com/katerinavos)
    
